@@ -1,0 +1,148 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: azure;
+  color: black;
+  padding: 0 2rem;
+}
+
+nav a{
+  margin: 0 2rem;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover{
+  color:rgb(233, 153, 34);
+  /* background-color: rgb(59, 49, 36); */
+}
+
+.header .nav-btn{
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: 4px solid ghostwhite;
+  /* outline: none; */
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+
+}
+
+.btn{
+  background-color: rgb(95, 79, 238);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 10%;
+}
+.btn-log{
+  background-color: rgb(255, 255, 255);
+  color: rgb(95, 79, 238);
+  font-weight: bold;
+  border: 1px  solid rgb(225, 238, 213);
+  padding: 10px;
+  border-radius: 10%;
+}
+
+@media only screen and (max-width:1024px) {
+  .header .nav-btn{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .header nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+    background-color: rgb(223, 224, 224);
+    transition: 1s;
+    transform: translate(-100vh);
+  }
+
+  .header .responsive_nav{
+    transform: none;
+  }
+  
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  nav a{
+    font-size: 1rem;
+  }
+}
+/* Properties css */
+.container{
+  /* align-items: center;
+  justify-content: center;
+  display: flex; */
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.search-pos{
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+@media (min-width: 600px) {
+  .search-pos { grid-template-columns: repeat(2, 5fr); }
+}
+
+.inp{
+  height: 30px;
+  width: 95%;
+}
+
+/* card design */
+.card{
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border: 0.5px solid rgb(95, 79, 238);
+  border-radius: 2px;
+}
+.cards {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(5, 1fr); }
+}
+
+.templet{
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border: 0.5px solid rgb(95, 79, 238);
+  border-radius: 2px;
+}
+.templets {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  .templets { grid-template-columns: repeat(3, 1fr); }
+}
+
+.icons{
+  font-size: 12px;
+}
